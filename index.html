@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The current IU Bloomington campus map is confusing and slow, so we set out to make a faster and more feature packed version of it. Take IU Maps on the go with offline search, fast building code look ups and never get lost at Indiana University again.">
+    <meta name="author" content="Liam Bolling">
+
+    <title>IU Maps App - Campus Map. Building Codes. Fast Search.</title>
+
+    <meta name="apple-itunes-app" content="app-id=1186140963">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:title" content="IU Maps App - Campus Map. Building Codes. Fast Search." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.iubmap.com" />
+    <meta property="og:image" content="img/social.png" />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <style>
+    body {
+        padding-top: 40px;
+        background: url(img/background.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    h1 {
+        color: #fff;
+        font-family:'Tofino_Bold', sans-serif;
+        font-size: 42px;
+    }
+
+    p {
+        font-family:'Tofino_Regular', sans-serif;
+        color: #fff;
+        font-size: 18px;
+    }
+
+    @font-face {
+        font-family:"Tofino_Bold";
+        src: url("fonts/Tofino_OTF/Tofino_Bold.otf")
+    }
+    @font-face {
+        font-family:"Tofino_Bold";
+        src: url("fonts/Tofino_TTF/Tofino_Bold.tff")
+    }
+
+    @font-face {
+        font-family:"Tofino_Regular";
+        src: url("fonts/Tofino_OTF/Tofino_Regular.otf")
+    }
+    @font-face {
+        font-family:"Tofino_Regular";
+        src: url("fonts/Tofino_TTF/Tofino_Regular.tff")
+    }
+
+    .swiper-container {
+        width: 232.5px;
+        background-color: #000;
+        height: 412px;
+        top: 71px;
+        left: 34px;
+        position: absolute;
+    }
+
+    .swiper-slide {
+        width: 232.5px;
+        height: 412px;
+    }
+
+    div.fb-messengermessageus.fb_iframe_widget {
+        margin-top: 10px;
+        margin-left: 20px;
+        border-radius: 4px;
+        overflow: hidden;
+        float: left;
+    }
+
+    @media (max-width: 767px) {
+        .col-xs-6{
+            width: 300px;
+            display: table;
+            margin: 0 auto;
+            float: none;
+        }
+
+        div.fb-messengermessageus.fb_iframe_widget {
+            display: table;
+            margin: 0 auto;
+            margin-top: 15px;
+        }
+    }
+
+    .smallfbButton{
+        display: table;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+
+    .downloadAppMobileButton{
+        height: 38px;
+        width: 130px;
+        display: table;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-5 col-xs-6" style="height:580px;">
+
+                <div style="position:absolute;">
+                    <img src="img/iu-iub-building-code-map-iphone-app.png" title="IU Maps Building Codes App for iPhone" width="270" height="auto" />
+                </div>
+
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/iu-iub-maps-buildings-app-1.png" title="Screenshot of IU Maps Map Building Code Campus App" width="232.5" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/iu-iub-maps-buildings-app-2.png" title="Screenshot of IU Maps Map Building Code Campus App" width="232.5" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/iu-iub-maps-buildings-app-3.png" title="Screenshot of IU Maps Map Building Code Campus App" width="232.5" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hidden-xs col-md-8 col-sm-7" style="margin-bottom:25px;">
+                <img src="img/iu-maps-app-icon.png" width="75" height="75" />
+                <h1>IU Maps App</h1>
+                <p style="font-size: 25px;">
+                    Full Campus Map. Building Codes. Fast Search.
+                </p>
+
+                <p>The current IU Bloomington campus map is confusing and slow, so we set out to make a faster and more feature packed version of it. Take IU Maps on the go with offline search, fast building code look ups and never get lost at Indiana University again. Made by the EventList Team.</p>
+
+                <a href="https://itunes.apple.com/us/app/iu-maps/id1186140963?ls=1&mt=8" target="_parent" style="float:left; height:38px; width: 130px; margin-top: 10px;">
+                    <img src="svg/Download_on_the_App_Store_Badge_US-UK_135x40.svg" height="38" width="130"  />
+                </a>
+
+                <div class="fb-messengermessageus"
+                  messenger_app_id="1488977818089532"
+                  page_id="1558705921088550"
+                  color="white"
+                  size="xlarge" >
+                </div>
+
+            </div>
+
+
+            <div class="visible-xs col-xs-12 text-center">
+                <img src="img/iu-maps-app-icon.png" width="75" height="75" />
+                <h1>IU Maps App</h1>
+                <p style="font-size: 25px;">
+                    Full Campus Map. Building Codes. Fast Search.
+                </p>
+                <p>The current IU Bloomington campus map is confusing and slow, so we set out to make a faster and more feature packed version of it. Take IU Maps on the go with offline search, fast building code look ups and never get lost at Indiana University again. Made by the EventList Team.</p>
+
+                <a href="https://itunes.apple.com/us/app/iu-maps/id1186140963?ls=1&mt=8" class="downloadAppMobileButton" target="_parent">
+                    <img src="svg/Download_on_the_App_Store_Badge_US-UK_135x40.svg" height="38" width="130"  />
+                </a>
+
+                <div class="fb-messengermessageus smallfbButton"
+                  messenger_app_id="1488977818089532"
+                  page_id="1558705921088550"
+                  color="white"
+                  size="xlarge" >
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+            window.fbAsyncInit = function() {
+              FB.init({
+                appId: "1488977818089532",
+                xfbml: true,
+                version: "v2.6"
+              });
+
+            };
+
+            (function(d, s, id){
+               var js, fjs = d.getElementsByTagName(s)[0];
+               if (d.getElementById(id)) { return; }
+               js = d.createElement(s); js.id = id;
+               js.src = "//connect.facebook.net/en_US/sdk.js";
+               fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+
+          </script>
+
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false
+    });
+    </script>
+</body>
+
+</html>
